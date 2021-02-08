@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1EF063525D1FB000038603C /* TimerApp_AppleWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F1EF063425D1FB000038603C /* TimerApp_AppleWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F1EF063B25D1FB000038603C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1EF063925D1FB000038603C /* Interface.storyboard */; };
+		F1EF063D25D1FB020038603C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1EF063C25D1FB020038603C /* Assets.xcassets */; };
+		F1EF064425D1FB030038603C /* TimerApp_AppleWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F1EF064325D1FB030038603C /* TimerApp_AppleWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F1EF064925D1FB030038603C /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF064825D1FB030038603C /* HostingController.swift */; };
+		F1EF064B25D1FB030038603C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF064A25D1FB030038603C /* ContentView.swift */; };
+		F1EF064D25D1FB030038603C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF064C25D1FB030038603C /* ExtensionDelegate.swift */; };
+		F1EF064F25D1FB030038603C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF064E25D1FB030038603C /* NotificationController.swift */; };
+		F1EF065125D1FB030038603C /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF065025D1FB030038603C /* NotificationView.swift */; };
+		F1EF065325D1FB030038603C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF065225D1FB030038603C /* ComplicationController.swift */; };
+		F1EF065525D1FB030038603C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1EF065425D1FB030038603C /* Assets.xcassets */; };
+		F1EF065825D1FB030038603C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1EF065725D1FB030038603C /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1EF063625D1FB000038603C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1EF062A25D1FB000038603C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1EF063325D1FB000038603C;
+			remoteInfo = "TimerApp_AppleWatch WatchKit App";
+		};
+		F1EF064525D1FB030038603C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1EF062A25D1FB000038603C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1EF064225D1FB030038603C;
+			remoteInfo = "TimerApp_AppleWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1EF066025D1FB030038603C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F1EF064425D1FB030038603C /* TimerApp_AppleWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1EF066425D1FB030038603C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F1EF063525D1FB000038603C /* TimerApp_AppleWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F1EF063025D1FB000038603C /* TimerApp_AppleWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerApp_AppleWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1EF063425D1FB000038603C /* TimerApp_AppleWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TimerApp_AppleWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1EF063A25D1FB000038603C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F1EF063C25D1FB020038603C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1EF063E25D1FB020038603C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1EF064325D1FB030038603C /* TimerApp_AppleWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TimerApp_AppleWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1EF064825D1FB030038603C /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		F1EF064A25D1FB030038603C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1EF064C25D1FB030038603C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F1EF064E25D1FB030038603C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F1EF065025D1FB030038603C /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		F1EF065225D1FB030038603C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F1EF065425D1FB030038603C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1EF065725D1FB030038603C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1EF065925D1FB030038603C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1EF065A25D1FB030038603C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1EF064025D1FB030038603C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1EF062925D1FB000038603C = {
+			isa = PBXGroup;
+			children = (
+				F1EF063825D1FB000038603C /* TimerApp_AppleWatch WatchKit App */,
+				F1EF064725D1FB030038603C /* TimerApp_AppleWatch WatchKit Extension */,
+				F1EF063125D1FB000038603C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1EF063125D1FB000038603C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1EF063025D1FB000038603C /* TimerApp_AppleWatch.app */,
+				F1EF063425D1FB000038603C /* TimerApp_AppleWatch WatchKit App.app */,
+				F1EF064325D1FB030038603C /* TimerApp_AppleWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1EF063825D1FB000038603C /* TimerApp_AppleWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F1EF063925D1FB000038603C /* Interface.storyboard */,
+				F1EF063C25D1FB020038603C /* Assets.xcassets */,
+				F1EF063E25D1FB020038603C /* Info.plist */,
+			);
+			path = "TimerApp_AppleWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		F1EF064725D1FB030038603C /* TimerApp_AppleWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F1EF064825D1FB030038603C /* HostingController.swift */,
+				F1EF064A25D1FB030038603C /* ContentView.swift */,
+				F1EF064C25D1FB030038603C /* ExtensionDelegate.swift */,
+				F1EF064E25D1FB030038603C /* NotificationController.swift */,
+				F1EF065025D1FB030038603C /* NotificationView.swift */,
+				F1EF065225D1FB030038603C /* ComplicationController.swift */,
+				F1EF065425D1FB030038603C /* Assets.xcassets */,
+				F1EF065925D1FB030038603C /* Info.plist */,
+				F1EF065A25D1FB030038603C /* PushNotificationPayload.apns */,
+				F1EF065625D1FB030038603C /* Preview Content */,
+			);
+			path = "TimerApp_AppleWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F1EF065625D1FB030038603C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1EF065725D1FB030038603C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1EF062F25D1FB000038603C /* TimerApp_AppleWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1EF066525D1FB030038603C /* Build configuration list for PBXNativeTarget "TimerApp_AppleWatch" */;
+			buildPhases = (
+				F1EF062E25D1FB000038603C /* Resources */,
+				F1EF066425D1FB030038603C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1EF063725D1FB000038603C /* PBXTargetDependency */,
+			);
+			name = TimerApp_AppleWatch;
+			productName = TimerApp_AppleWatch;
+			productReference = F1EF063025D1FB000038603C /* TimerApp_AppleWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		F1EF063325D1FB000038603C /* TimerApp_AppleWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1EF066125D1FB030038603C /* Build configuration list for PBXNativeTarget "TimerApp_AppleWatch WatchKit App" */;
+			buildPhases = (
+				F1EF063225D1FB000038603C /* Resources */,
+				F1EF066025D1FB030038603C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1EF064625D1FB030038603C /* PBXTargetDependency */,
+			);
+			name = "TimerApp_AppleWatch WatchKit App";
+			productName = "TimerApp_AppleWatch WatchKit App";
+			productReference = F1EF063425D1FB000038603C /* TimerApp_AppleWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F1EF064225D1FB030038603C /* TimerApp_AppleWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1EF065D25D1FB030038603C /* Build configuration list for PBXNativeTarget "TimerApp_AppleWatch WatchKit Extension" */;
+			buildPhases = (
+				F1EF063F25D1FB030038603C /* Sources */,
+				F1EF064025D1FB030038603C /* Frameworks */,
+				F1EF064125D1FB030038603C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TimerApp_AppleWatch WatchKit Extension";
+			productName = "TimerApp_AppleWatch WatchKit Extension";
+			productReference = F1EF064325D1FB030038603C /* TimerApp_AppleWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1EF062A25D1FB000038603C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F1EF062F25D1FB000038603C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					F1EF063325D1FB000038603C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					F1EF064225D1FB030038603C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = F1EF062D25D1FB000038603C /* Build configuration list for PBXProject "TimerApp_AppleWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1EF062925D1FB000038603C;
+			productRefGroup = F1EF063125D1FB000038603C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1EF062F25D1FB000038603C /* TimerApp_AppleWatch */,
+				F1EF063325D1FB000038603C /* TimerApp_AppleWatch WatchKit App */,
+				F1EF064225D1FB030038603C /* TimerApp_AppleWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1EF062E25D1FB000038603C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1EF063225D1FB000038603C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1EF063D25D1FB020038603C /* Assets.xcassets in Resources */,
+				F1EF063B25D1FB000038603C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1EF064125D1FB030038603C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1EF065825D1FB030038603C /* Preview Assets.xcassets in Resources */,
+				F1EF065525D1FB030038603C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1EF063F25D1FB030038603C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1EF064B25D1FB030038603C /* ContentView.swift in Sources */,
+				F1EF064925D1FB030038603C /* HostingController.swift in Sources */,
+				F1EF064F25D1FB030038603C /* NotificationController.swift in Sources */,
+				F1EF064D25D1FB030038603C /* ExtensionDelegate.swift in Sources */,
+				F1EF065125D1FB030038603C /* NotificationView.swift in Sources */,
+				F1EF065325D1FB030038603C /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1EF063725D1FB000038603C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1EF063325D1FB000038603C /* TimerApp_AppleWatch WatchKit App */;
+			targetProxy = F1EF063625D1FB000038603C /* PBXContainerItemProxy */;
+		};
+		F1EF064625D1FB030038603C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1EF064225D1FB030038603C /* TimerApp_AppleWatch WatchKit Extension */;
+			targetProxy = F1EF064525D1FB030038603C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1EF063925D1FB000038603C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1EF063A25D1FB000038603C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1EF065B25D1FB030038603C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1EF065C25D1FB030038603C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1EF065E25D1FB030038603C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TimerApp_AppleWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = J3Q7HWN3W7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TimerApp_AppleWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.gabriel.gustavo.TimerApp-AppleWatch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		F1EF065F25D1FB030038603C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TimerApp_AppleWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = J3Q7HWN3W7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TimerApp_AppleWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.gabriel.gustavo.TimerApp-AppleWatch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		F1EF066225D1FB030038603C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3Q7HWN3W7;
+				IBSC_MODULE = TimerApp_AppleWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "TimerApp_AppleWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.gabriel.gustavo.TimerApp-AppleWatch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		F1EF066325D1FB030038603C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3Q7HWN3W7;
+				IBSC_MODULE = TimerApp_AppleWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "TimerApp_AppleWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.gabriel.gustavo.TimerApp-AppleWatch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		F1EF066625D1FB030038603C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3Q7HWN3W7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.gabriel.gustavo.TimerApp-AppleWatch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F1EF066725D1FB030038603C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3Q7HWN3W7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.gabriel.gustavo.TimerApp-AppleWatch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1EF062D25D1FB000038603C /* Build configuration list for PBXProject "TimerApp_AppleWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1EF065B25D1FB030038603C /* Debug */,
+				F1EF065C25D1FB030038603C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1EF065D25D1FB030038603C /* Build configuration list for PBXNativeTarget "TimerApp_AppleWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1EF065E25D1FB030038603C /* Debug */,
+				F1EF065F25D1FB030038603C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1EF066125D1FB030038603C /* Build configuration list for PBXNativeTarget "TimerApp_AppleWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1EF066225D1FB030038603C /* Debug */,
+				F1EF066325D1FB030038603C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1EF066525D1FB030038603C /* Build configuration list for PBXNativeTarget "TimerApp_AppleWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1EF066625D1FB030038603C /* Debug */,
+				F1EF066725D1FB030038603C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1EF062A25D1FB000038603C /* Project object */;
+}
